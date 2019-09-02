@@ -27,6 +27,19 @@ public class AppTest
         assertFalse(App.add(number1,number2)==3 );
     }
 
+    // Add array test
+    public void add_array_True()
+    {
+        double array_num[]={1, 1, 1, 1, 1, 1};
+        assertTrue(App.add(array_num)==6);
+    }
+    @Test
+    public void add_array_False()
+    {
+        double array_num[]={1, 1, 1, 1, 1, 1};
+        assertFalse(App.add(array_num)==7);
+    }
+
     //Sub test
     @Test
     public void subTrue()
@@ -42,6 +55,22 @@ public class AppTest
         double number2=1;
         assertFalse(App.sub(number1,number2)==2);
     }
+
+
+    //Sub array test
+    @Test
+    public void sub_array_True()
+    {
+        double array_num[]={1, 1, 1, 1, 1, 1};
+        assertTrue(App.sub(array_num)==0);
+    }
+    @Test
+    public void sub_array_False()
+    {
+        double array_num[]={1, 1, 1, 1, 1, 1};
+        assertFalse(App.sub(array_num)==2);
+    }
+
 
 
     //Div test
